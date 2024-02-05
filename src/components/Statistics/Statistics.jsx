@@ -7,7 +7,7 @@ export const Statistics = ({
   total,
   positivePercentage,
 }) => {
-  return total > 0 ? (
+  return (
     <ul className={css.list}>
       <li className={css.item}>Good: {good}</li>
       <li className={css.item}>Neutral: {neutral}</li>
@@ -17,7 +17,5 @@ export const Statistics = ({
         Positive feedback: {positivePercentage} &#37;
       </li>
     </ul>
-  ) : (
-    'No feedback given'
   );
 };
